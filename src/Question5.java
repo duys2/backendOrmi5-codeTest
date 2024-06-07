@@ -16,5 +16,18 @@ public class Question5 {
     }
 
     return -1;
+
+    // solution
+    /*
+    int result = -1;
+
+    for (int i = 0; i < nums.length; i++) {
+      if (nums[i] == target) {
+        result = i;
+        break; // 성능을 위해 빠져 나옴
+      }
+    }
+    return result;
+    */
   }
 }
