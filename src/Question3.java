@@ -13,49 +13,42 @@ public class Question3 {
   }
 
   static void printCategory(String str) {
-    /*int jump = 0;
-    String text;
-
-    while (true) {
-      text = str.substring(str.indexOf(":") + 2 + jump, str.indexOf(",", str.indexOf(":")) + jump);
-      jump += text.length();
-      System.out.println(text);
-    }*/
-
     // solution
     int i = 0;
 
     while (true) {
       // i의 값이 업데이트 되면서 해당 인덱스의 문자열 탐색
-      int idx = str.indexOf("category:", i);
+      int index = str.indexOf("category:", i);
 
-      // 더 이상 찾을 수 없으면 indexOf()는 -1을 반환. 즉, 더이상 찾을 수 없으면 while문 종료
-      if (idx == -1) break;
+      // 더 이상 찾을 수 없을 때 -1 반환
+      if (index == -1) break; // 더 이상 찾을 수 없으면 while 문 종료
 
-      int startIdx = idx + 9;
-      int endIdx = str.indexOf(',', startIdx);
+      int startIndex = index + 9;
+      int endIndex = str.indexOf(',', startIndex); // 시작한 인덱스만큼 건너뛰기
 
-      System.out.println(str.substring(startIdx, endIdx));
+      System.out.println(str.substring(startIndex, endIndex)); // 문자열 추출
 
-      i = endIdx + 1;
+      i = endIndex + 1;
     }
-
-    /*static void printCategory(String str){
-      int i =0;
-      while(true){
-        // i 의 값이 업데이트 되면서 해당 인덱스의 문자열을 탐색합니다.
-        int idx = str.indexOf("category:", i);
-        if(idx == -1){
-          break;
-        }
-
-        int startIdx = idx + 9;
-        int endIdx = str.indexOf(',', startIdx);
-
-        System.out.println(str.substring(startIdx, endIdx));
-
-        i = endIdx+1;
-      }
-    }*/
   }
+
+  /*
+  static void printCategory(String str){
+    int i =0;
+    while(true){
+      // i 의 값이 업데이트 되면서 해당 인덱스의 문자열을 탐색합니다.
+      int index = str.indexOf("category:", i);
+      if(index == -1){
+        break;
+      }
+
+      int startIndex = index + 9;
+      int endIndex = str.indexOf(',', startIndex);
+
+      System.out.println(str.substring(startIndex, endIndex));
+
+      i = endIndex+1;
+    }
+  }
+  */
 }

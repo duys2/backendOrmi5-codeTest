@@ -20,12 +20,12 @@ public class Question1 {
   public static String getMiddelThreeText(String text) {
     String result;
 
-    if (text.length() < 3) {
+    if (text.length() < 3) { // 문자열의 길이가 3보다 작으면, 문자열을 그대로 반환
       result = text;
-    } else if (text.length() % 2 != 0) {
+    } else if (text.length() % 2 != 0) { // 문자열의 길이가 홀수인 경우, 가운데 3글자를 반환
       // substring(시작 인덱스, 종료 인덱스)
       result = text.substring(((text.length() / 2) - 1), text.length() / 2 + 2);
-    } else {
+    } else { // 짝수일 때는 반환값 설명이 없다: 이부분은 실제로 코딩 테스트 응시할 때 꼭 질문하기
       result = "";
     }
 

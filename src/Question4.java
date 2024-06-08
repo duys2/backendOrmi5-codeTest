@@ -20,7 +20,7 @@ public class Question4 {
 
     // solution
     for (int i = 0; i < text.length(); i++) {
-      System.out.println(text.charAt(i));
+      System.out.println(text.charAt(i)); // i번째(index)의 문자를 출력
     }
 
     for (int i = text.length() - 1; i >= 0; i--) {

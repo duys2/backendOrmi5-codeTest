@@ -11,11 +11,22 @@ public class Question5 {
   }
 
   static int search(int[] nums, int target) {
+    // for (int i = 0; i < nums.length; i++) {
+    //   if (nums[i] == target) return i;
+    // }
+    //
+    // return -1;
+
+    int result = -1; // 못 찾으면 -1 반환
+
     for (int i = 0; i < nums.length; i++) {
-      if (nums[i] == target) return i;
+      if (nums[i] == target) { // 찾는 값이 있으면
+        result = i; // 반환값 인덱스로
+        break; // 찾았으면 종료
+      }
     }
 
-    return -1;
+    return result; // 결과값 반환
 
     // solution
     /*
