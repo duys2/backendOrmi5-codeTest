@@ -40,7 +40,6 @@ public class Question14 {
 		*/
 
 		/* solution */
-
 		String result = "";
 
 		for (int i = 0; i < s.length(); i++) {
@@ -56,18 +55,19 @@ public class Question14 {
 			if ((i == 0 || s.charAt(i - 1) != '*') && (i == s.length() - 1 || s.charAt(i + 1) != '*')) {
 				result += String.valueOf(s.charAt(i));
 			}
+			/*
+			if (i == 0 && s.charAt(i) != '*') {
+				result += String.valueOf(s.charAt(i));
+			}
 
-			// if (i == 0 && s.charAt(i) != '*') {
-			// 	result += String.valueOf(s.charAt(i));
-			// }
-			//
-			// if (i > 0 && s.charAt(i) != '*' && s.charAt(i - 1) != '*') {
-			// 	result += String.valueOf(s.charAt(i));
-			// }
-			//
-			// if (i > 0 && s.charAt(i) == '*' && s.charAt(i - 1) != '*') {
-			// 	result = result.subsing(0, result.length() - 1);
-			// }
+			if (i > 0 && s.charAt(i) != '*' && s.charAt(i - 1) != '*') {
+				result += String.valueOf(s.charAt(i));
+			}
+
+			if (i > 0 && s.charAt(i) == '*' && s.charAt(i - 1) != '*') {
+				result = result.subsing(0, result.length() - 1);
+			}
+			*/
 		}
 
 		return result;
