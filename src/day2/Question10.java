@@ -17,11 +17,11 @@ public class Question10 {
 	}
 
 	static boolean isCool(int num) {
-		return (num % 11 == 0) || (num % 11 == 1);
+		return (num >= 0) ? (num % 11 == 0) || (num % 11 == 1) : false;
 
 		// solution
-		// if(n >= 0){
-		// 	return n%11 == 0 || n%11 == 1;
+		// if (num >= 0) {
+		// 	return num % 11 == 0 || num % 11 == 1;
 		// }
 		// return false;
 	}

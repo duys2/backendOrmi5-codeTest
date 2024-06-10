@@ -22,7 +22,6 @@ public class Question13 {
 		}
 		*/
 
-		/*
 		if (str == null || str.length() == 0) {
 			return "";
 		}
@@ -30,20 +29,18 @@ public class Question13 {
 		String s = String.valueOf(str.charAt(0));
 
 		return s + s + repeatChar(str.substring(1));
-		*/
 
 		// solution
-		String result = "";
-
-		for (int i = 0; i < str.length(); i++) {
-			char theChar = str.charAt(i);
-			// result += theChar + theChar; // char 자료형이라서 유니코드로 연산됨
-
-			// 아래에서 흐리게 나오는 건 메소드를 너무 많이 써서 (둘 중 하나만 해도 자동 형변환이 됨)
-			// result += Character.toString(theChar) + String.valueOf(theChar);
-			result += "" + theChar + theChar; // 메소드를 안 쓰려면 빈 문자열 더하기
-		}
-
-		return result;
+		// String result = "";
+		//
+		// for (int i = 0; i < str.length(); i++) {
+		// 	char theChar = str.charAt(i);
+		// 	// result += theChar + theChar; // char 자료형이라서 유니코드로 연산됨
+		//
+		// 	// 아래에서 흐리게 나오는 건 메소드를 너무 많이 써서 (둘 중 하나만 해도 자동 형변환이 됨)
+		// 	// result += Character.toString(theChar) + String.valueOf(theChar);
+		// 	result += "" + theChar + theChar; // 메소드를 안 쓰려면 빈 문자열 더하기
+		// }
+		// return result;
 	}
 }

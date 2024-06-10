@@ -57,17 +57,17 @@ public class Question14 {
 				result += String.valueOf(s.charAt(i));
 			}
 
-			//            if(i == 0 && s.charAt(i) != '*'){
-			//                result += String.valueOf(s.charAt(i));
-			//            }
+			// if (i == 0 && s.charAt(i) != '*') {
+			// 	result += String.valueOf(s.charAt(i));
+			// }
 			//
-			//            if(i>0 && s.charAt(i) != '*' && s.charAt(i -1) != '*'){
-			//                result += String.valueOf(s.charAt(i));
-			//            }
+			// if (i > 0 && s.charAt(i) != '*' && s.charAt(i - 1) != '*') {
+			// 	result += String.valueOf(s.charAt(i));
+			// }
 			//
-			//            if(i>0 && s.charAt(i) == '*' && s.charAt(i-1) != '*'){
-			//                result = result.subsing(0, result.length() -1);
-			//            }
+			// if (i > 0 && s.charAt(i) == '*' && s.charAt(i - 1) != '*') {
+			// 	result = result.subsing(0, result.length() - 1);
+			// }
 		}
 
 		return result;
